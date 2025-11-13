@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Clock — Tailwind</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center p-6">
+  <div class="w-full max-w-md mx-auto">
+    <div class="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl shadow-2xl p-8 text-center text-white">
+      <h1 class="text-3xl font-bold mb-6 drop-shadow-md">Live Clock ⏰</h1>
+
+      <!-- Clock Display -->
+      <div class="inline-flex items-center justify-center gap-3 drop-shadow-md">
+        <div id="hrs" class="text-7xl font-extrabold w-24"></div>
+        <div class="text-7xl font-extrabold">:</div>
+        <div id="min" class="text-7xl font-extrabold w-24"></div>
+        <div class="text-7xl font-extrabold">:</div>
+        <div id="sec" class="text-7xl font-extrabold w-24"></div>
+      </div>
+
+      <!-- AM/PM -->
+      <div class="mt-4 text-lg text-white/90 font-medium">
+        <span id="ampm"></span>
+        <span class="mx-2">•</span>
+        <span>Local Time</span>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-6 text-sm text-white/70">Tailwind Glassmorphism Design ✨</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+   
+  
+</body>
+</html>
